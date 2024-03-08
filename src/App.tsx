@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 import './App.css'
 
 function App() {
   
+  const { t } = useTranslation();
 
   return (
     <>
-    <h1>hello</h1>
+    <h1>{t('home')}</h1>
     </>
   )
 }
