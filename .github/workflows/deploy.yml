@@ -11,19 +11,9 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
       - name: Build the Docker image
-        run: sudo docker login -u ${{secrets.DOCKER_HUB_USERNAME}} -p ${{secrets.DOCKER_HUB_API}}
-      - name: Build docker image
         run: sudo docker build -t athman3/war9a .
-      - name: Publish image to docker hub
-        run: sudo docker push athman3/war9a:latest
-  
-  deploy:
-    needs: build
-    runs-on: self-hosted
-    steps:
-      - name: Pull image from docker hub
-        run: sudo docker pull athman3/war9a:latest
       - name: Delete old container
         run: sudo docker rm -f war9a
       - name: Run docker container
         run: sudo docker run -d -p 3000:3000 --name war9a athman3/war9a
+       
