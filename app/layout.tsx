@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+// TODO - I18n
+// TODO - structure document object oriented
+// TODO - project deployement system
+// TODO - docker backup system (continus integration/deployment )
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
