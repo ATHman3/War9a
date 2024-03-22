@@ -11,11 +11,11 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker login -u ${{secrets.DOCKER_HUB_USERNAME}} -p ${{secrets.DOCKER_HUB_API}}
+        run: sudo docker login -u ${{secrets.DOCKER_HUB_USERNAME}} -p ${{secrets.DOCKER_HUB_API}}
       - name: Build docker image
-        run: docker build -t athman3/war9a .
+        run: sudo docker build -t athman3/war9a .
       - name: Publish image to docker hub
-        run: docker push athman3/war9a:latest
+        run: sudo docker push athman3/war9a:latest
   
   deploy:
     needs: build
