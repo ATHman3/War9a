@@ -19,7 +19,7 @@ jobs:
   
   deploy:
     needs: build
-    runs-on: [kasm]
+    runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
         run: sudo docker pull athman3/war9a:latest
