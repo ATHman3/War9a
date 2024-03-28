@@ -1,6 +1,6 @@
 // src/lib/i18n.ts
 import { createI18n } from "@inlang/paraglide-js-adapter-next"
-import type { AvailableLanguageTag } from "@/paraglide/runtime.js"
+import type { AvailableLanguageTag } from "@/paraglide/runtime" //generated file
 
 // All available functions exported. Just use the ones you need
 export const {
@@ -10,5 +10,4 @@ export const {
 	usePathname,
 	redirect,
 	permanentRedirect,
-	localizePathname,
 } = createI18n<AvailableLanguageTag>()
