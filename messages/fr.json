@@ -3,5 +3,6 @@
     "greeting": "Bonjour",
     "goodbye": "Au revoir",
     "thankYou": "Merci",
-    "error": "Erreur"
+    "error": "Erreur",
+    "test": ""
 }
