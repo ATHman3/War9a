@@ -79,5 +79,5 @@ body {
 
 
 html, body {
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: all 0.5s ease, color 0.5s ease;
 }
