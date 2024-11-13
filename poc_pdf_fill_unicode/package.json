@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "arabic-reshaper": "^1.1.0",
+    "bidi-js": "^1.0.3",
+    "canvas": "^2.11.2",
+    "pdf-lib": "^1.17.1"
+  },
+  "name": "test-pdf",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
